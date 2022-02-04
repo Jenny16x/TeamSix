@@ -6,7 +6,7 @@ Pandas in Jupyter Lab will be used to clean the data and perform the initial exp
 
 ---
 ### **Database**<br>
-
+The data for this project will be stored as CSV files and loaded into Pandas for analysis. No database storage system will be used for this project.
 
 ---
 ### **Machine Learning Model**<br>
