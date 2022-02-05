@@ -5,7 +5,7 @@ For this project, we will be creating a supervised machine learning model to tak
 ## Reasoning
 We selected this topic because ______.
 
-## Data Source
+## Data Sources
 We will be using MLB pitching statistics and salary data from _______ ***(insert links to sources)***
 
 ## What We Plan to Answer with Data
