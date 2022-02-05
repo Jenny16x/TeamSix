@@ -15,3 +15,7 @@ A supervised learning model will be used to predict pitcher salaries based on va
 ---
 ### **Dashboard**
 Tableau will be used to create visualizations of how well various pitcher stats correlate to salary, as well as visualizations showing how well our model can predict pitcher salary based on these metrics. 
+
+
+# Communication Protocol
+Our team will communicate during class sessions and through our own project group Slack channel. Additionally, we will be meeting once a week outside of class to discuss progress, help each other, and ensure all segment deliverables are ready for submission by Sunday evening.
