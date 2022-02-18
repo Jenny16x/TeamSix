@@ -50,7 +50,11 @@ I then used the `feature_importances_` method and sorted them to display the ran
 <br><br>
 Due to the extremely weak values produced by this first random forest analysis, I decided that I would need to alter some aspects of the data cleaning and model development to produce better results. 
 
-
+## Random Forest Analysis, pt. 2
+---
+One method I attempted to use in order to improve the feature ranking of the random forest analysis was to bin the salaries into `low`, `mid`, and `high` classes. 
+<br><br>
+To create the bins, I utilized pandas `.qcut()` method to create the 3 
 
 
 
