@@ -25,12 +25,30 @@ Here I read in the `2016-2019_pitcher_stats.csv` file as a dataframe to merge wi
 I then merged the demographics dataframe with the pitcher & salary dataframe, creating the 'full' dataframe (`full_df`). I exported this dataframe as a csv titled `pitcher_stat_sal_dem.csv`.
 <br><br>
 
-## encoding object features
+## Encoding Object Features
 After creating the `pitcher_stat_sal_dem.csv` file, I decided to encode the features that were classified as object datatypes as numerical in preparation for the random forest analysis. 
 <br><br>
 I used the `LabelEncoder` method from scikit-learn to encode the `teamID`, `lgID`, and `throws` features into numerical values. After viewing the new dataframe to ensure features were properly encoded, I exported the new dataframe as a csv `encoded_pitcher_stat_sal_dem.csv`. This would be the dataset used in my first random forest analyses.
+<br>
+<br>
 
-
+## Random Forest Analysis, pt. 1
+---
+I loaded in the `encoded_pitcher_stat_sal_dem.csv` file to use for the first random forest analysis. 
+<br><br>
+To create the features, I utilized a for loop to include all columns that were not `salary` or `playerID` as our `X` variable, and the `salary` column as our target `y` variable. 
+<br><br>
+The training and testing sets were split using `train_test_split`.
+<br><br>
+The data was scaled using `StandardScaler`, then fit and transformed. 
+<br><br>
+The initial random forest model was created using `RandomForestClassifier` with the `n_estimators=128` and `random_state=1`. 
+<br><br>
+The model was then fit, and predictions were made. After making predictions, I ran the `accuracy_score` which returned a value of approximately 1.92%, which was extremely weak. 
+<br><br>
+I then used the `feature_importances_` method and sorted them to display the ranking of each features' importance in determining salary. The values for each feature were also extremely low, with the highest ranking feature, `ERA`, producing a value of approximately 5.24%. 
+<br><br>
+Due to the extremely weak values produced by this first random forest analysis, I decided that I would need to alter some aspects of the data cleaning and model development to produce better results. 
 
 
 
