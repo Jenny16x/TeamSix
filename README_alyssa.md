@@ -20,7 +20,15 @@ The next step was to merge the unique player ID dataframe with the Lahman `Peopl
 After creating the demographics dataframe, I wanted to further clean it up to only include demographic information that may be relevant to determination of salary. So I used `df.drop()` to remove all unneccessary columms from the dataframe. Once I had cleaned the dataframe I exported it as a csv `pitch-demographics.csv`. 
 
 ## cleaning-and-merging-data.ipynb
+Here I read in the `2016-2019_pitcher_stats.csv` file as a dataframe to merge with the Lahman `Salaries.csv` file in a different way- this time doing a left merge on multiple columns (`playerID`, `yearID`, `teamID`, and `lgID`). However, I later realized that this method reduced the dataset down to 416 rows which affected the downstream random forest analyses I performed.
+<br><br>
+I then merged the demographics dataframe with the pitcher & salary dataframe, creating the 'full' dataframe (`full_df`). I exported this dataframe as a csv titled `pitcher_stat_sal_dem.csv`.
+<br><br>
 
+## encoding object features
+After creating the `pitcher_stat_sal_dem.csv` file, I decided to encode the features that were classified as object datatypes as numerical in preparation for the random forest analysis. 
+<br><br>
+I used the `LabelEncoder` method from scikit-learn to encode the `teamID`, `lgID`, and `throws` features into numerical values. After viewing the new dataframe to ensure features were properly encoded, I exported the new dataframe as a csv `encoded_pitcher_stat_sal_dem.csv`. This would be the dataset used in my first random forest analyses.
 
 
 
