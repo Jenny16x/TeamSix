@@ -28,3 +28,5 @@ We hope to be able to find pitcher metrics that are strongly correlated with sal
 Our team will communicate during class sessions and through our own project group Slack channel. Additionally, we will be meeting once a week outside of class to discuss progress, help each other, and ensure all segment deliverables are ready for submission by Sunday evening.
 <br>
 
+# Tableau
+Created multiple displays showing the pattern of pay for various factors. Used physical, statiscal, and yearly reports to create visual charts.
