@@ -22,14 +22,14 @@ In pitching, and baseball overall, there is an almost overwhelming variety of st
 
 
 *Cleaning Pitching Statistics Data*<br>
-[Jupyter Notebook- Cleaning Pitching Data](./cleaning-pitching-data.ipynb)
+[Jupyter Notebook- Cleaning Pitching Data](./jupyter-notebooks/cleaning-pitching-data.ipynb)
 <br>
 First, the pitching data was filtered to include only the years 2010-2019. We chose to include more years in the random forest analysis to give the model more data to work with when ranking the feature importances. After filtering by year, all rows with null values were dropped from the dataframe. 
 
 ![Pitching DataFrame - Filtered to 2010-2019](./images/pitchingCSV-yrs_filtered.png)
 <br>
 
-Next, a new column combining the `playerID` and `yearID` was created. Since the pitching and salaries dataframes have multiple rows with the same playerID for different years, having a unique ID that combines the `playerID` and `yearID` would help to reduce issues with merging later. This final dataframe was exported as a csv for later use ([Cleaned Pitching Data](./2010-2019_pitching_clean.csv)).
+Next, a new column combining the `playerID` and `yearID` was created. Since the pitching and salaries dataframes have multiple rows with the same playerID for different years, having a unique ID that combines the `playerID` and `yearID` would help to reduce issues with merging later. This final dataframe was exported as a csv for later use ([Cleaned Pitching Data](./csv-files/2010-2019_pitching_clean.csv)).
 
 ![Pitching Dataframe- Final](./images/pitchingDF-final.png)
 
@@ -37,24 +37,24 @@ Next, a new column combining the `playerID` and `yearID` was created. Since the 
 <br>
 
 *Cleaning People Data*<br>
-[Jupyter Notebook- Cleaning People Data](./cleaning-people-data.ipynb)
+[Jupyter Notebook- Cleaning People Data](./jupyter-notebooks/cleaning-people-data.ipynb)
 <br>
-For this dataset, we only wanted to keep the columns for features that could potentially influence salary. The unnecessary columns were dropped, with the final dataframe including only `playerID`, `weight`, `height`, `bats`, and `throws`. This dataframe was exported as a csv for later use ([Cleaned People Data](./2010-2019_people_clean.csv))
+For this dataset, we only wanted to keep the columns for features that could potentially influence salary. The unnecessary columns were dropped, with the final dataframe including only `playerID`, `weight`, `height`, `bats`, and `throws`. This dataframe was exported as a csv for later use ([Cleaned People Data](./csv-files/2010-2019_people_clean.csv))
 <br>
 ![People Dataframe- Final](./images/peopleDF-final.png)
 
 <br>
 
 *Cleaning Salary Data*<br>
-[Jupyter Notebook- Cleaning Salary Data](./cleaning-sal-data.ipynb)<br>
-First, all rows with null values were dropped. Then the data was filtered to include only years 2010-2019. Lastly, the `yearID` and `playerID` columns were merged into a new column in the same manner as was done with the pitching data. The final dataframe was exported as a csv for later use ([Cleaned Salary Data](./2010-2019_salaries_clean.csv)) <br>
+[Jupyter Notebook- Cleaning Salary Data](./jupyter-notebooks/cleaning-sal-data.ipynb)<br>
+First, all rows with null values were dropped. Then the data was filtered to include only years 2010-2019. Lastly, the `yearID` and `playerID` columns were merged into a new column in the same manner as was done with the pitching data. The final dataframe was exported as a csv for later use ([Cleaned Salary Data](./csv-files/2010-2019_salaries_clean.csv)) <br>
 ![Salaries Dataframe- Final](./images/salaryDF-final.png)<br>
 
 
 <br>
 
 ### Merging Datasets
-[Jupyter Notebook- Merging Data](./merging-data.ipynb)<br>
+[Jupyter Notebook- Merging Data](./jupyter-notebooks/merging-data.ipynb)<br>
 First, the pitching and people dataframes were read in and merged on `playerID` using a left join. 
 <br>![Merging Pitching Data with People Data](./images/merge_pitch-ppl.png)<br>
 
@@ -64,15 +64,15 @@ Next, the salaries dataframe was read in. Since all we needed to merge was the `
 <br>![Final Merged Dataset](./images/merged-final.png)<br>
 
 ### Encoding 
-[Jupyter Notebook- Encoding Data](./encoding-data.ipynb)<br>
+[Jupyter Notebook- Encoding Data](./jupyter-notebooks/encoding-data.ipynb)<br>
 Since there were a few features (`teamID`, `lgID`, `throws`, and `bats`) that had string values, they needed to be encoded as numerical values to be included in the random forest analysis. To accomplish this `LabelEncoder` was utilized and a new encoded dataframe was created and exported as a csv ([Encoded Data](./encoded_data.csv))
 
 ### Binning
-[Jupyter Notebook- Binning Salary Data](./binning-data.ipynb)<br>
-An additional dataframe/csv was created with an additional `salary-bin` column, classifying each salary as either low, mid, or high. This would be used in addition to the unbinned dataset to see which worked better for the random forest analysis ([Binned Encoded Data](./encoded_data_binned.csv)).
+[Jupyter Notebook- Binning Salary Data](./jupyter-notebooks/binning-data.ipynb)<br>
+An additional dataframe/csv was created with an additional `salary-bin` column, classifying each salary as either low, mid, or high. This would be used in addition to the unbinned dataset to see which worked better for the random forest analysis ([Binned Encoded Data](./csv-files/encoded_data_binned.csv)).
 
 ### Random Forest Analysis - Unbinned Data
-[Jupyter Notebook- RF Analysis Unbinned](./RF-redo-unbinned.ipynb)<br>
+[Jupyter Notebook- RF Analysis Unbinned](./jupyter-notebooks/RF-redo-unbinned.ipynb)<br>
 The encoded-unbinned dataset was read in. The features (statistics) and target (salary) variables were defined. Training and Test sets were split using `train_test_split`. 
 <br>
 The data was then scaled using `StandardScaler()`, and the random forest model was created using `RandomForestClassifier()`.
@@ -84,7 +84,7 @@ Additionally, an accuracy score was run to determine the random forest model's a
 <br>![Accuracy Score- Unbinned RF Analysis](./images/unbinned-acc_score.png) 
 
 ### Random Forest Analysis - Binned Data
-[Jupyter Notebook- RF Analysis Binned](./RF-redo-binned.ipynb)<br>
+[Jupyter Notebook- RF Analysis Binned](./jupyter-notebooks/RF-redo-binned.ipynb)<br>
 For this analysis, the exact same methods were employed as with the previous random forest analysis, only this time the salary bins were used as the target variable instead of the actual salary. This time around, the feature importances ranking appeared more consistent with what we would expect. 
 <br>![Feature Importances - Binned](./images/feature-importances_binned.png)<br>
 

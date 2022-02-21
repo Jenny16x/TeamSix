@@ -33,6 +33,12 @@ As a result of the scatterplots, the inital machine learning model chosen was li
 
 As we develop the dataset, our machine learning model will evolve and employ unsupervised learning to find additional relationships to salary.  From the original dataset, there are ERA values of 0, so additional variables will need to be taken into consideration when predicting salary.  
 
+## Random Forest Analysis
+To help narrow down which features to focus on for our machine learning model, we employed a random forest analysis to obtain a ranking of the various features' importances (see below).
+<br>![Random Forest Analysis Results](./random-forest-analysis/images/feature-importances_df.png)
+<br>
+The details of the analysis (data preprocessing, random forest analysis, results, etc.) can be found [here](./random-forest-analysis/README_random-forest.md).
+
 
 <br>
 
