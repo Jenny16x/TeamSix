@@ -39,6 +39,8 @@ To help narrow down which features to focus on for our machine learning model, w
 <br>
 The details of the analysis (data preprocessing, random forest analysis, results, etc.) can be found [here](./random-forest-analysis/README_random-forest.md).
 
+## Presentation - Google Slides
+https://docs.google.com/presentation/d/1bLOD9xRlKs59oyxRPALq-vUpr1tfs63MJF6HQ-OcI0s/edit?usp=sharing
 
 <br>
 
