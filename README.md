@@ -1,13 +1,27 @@
 # Predicting Pitcher Salaries
-## Topic
+
+## Table of Contents
+- [Overview](https://github.com/Jenny16x/TeamSix#project-overview)
+- [Data Preprocessing](https://github.com/Jenny16x/TeamSix#data-preprocessing)
+- [Machine Learning Model](https://github.com/Jenny16x/TeamSix#the-machine-learning-model)
+    - [Random Forest Analysis](https://github.com/Jenny16x/TeamSix#random-forest-analysis)
+- [Database](https://github.com/Jenny16x/TeamSix#database)
+- [Presentation](https://github.com/Jenny16x/TeamSix#presentation---google-slides)
+- [Dashboard](https://github.com/Jenny16x/TeamSix#dashboard)
+- [Communication Protocol](https://github.com/Jenny16x/TeamSix#communication-protocol)
+
+
+## Project Overview
+
+### Topic
 For this project, we will be creating a supervised machine learning model to take in MLB pitcher statistics to predict their expected salaries in the future.
 <br>
 
-## Reasoning
+### Reasoning
 We selected this topic because an abundance of baseball statistics data is readily available online, and predicting pitcher salaries seemed like an interesting yet feasible challenge for machine learning.
 <br>
 
-## Data Sources
+### Data Sources
 We will be using MLB pitching statistics and salary data for years 2016-2019 to train our model. We chose to use multiple years of data to imporove our model's accuracy. We chose not to include more recent years (2020 & 2021) because of the signinficant impact the COVID-19 pandemic had on professional sports. 
 
 We sourced our pitching statistics and player salary data from [Lahman's Baseball Database.](http://www.seanlahman.com/baseball-archive/statistics/)
