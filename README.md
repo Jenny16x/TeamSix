@@ -39,12 +39,16 @@ To help narrow down which features to focus on for our machine learning model, w
 <br>
 The details of the analysis (data preprocessing, random forest analysis, results, etc.) can be found [here](./random-forest-analysis/README_random-forest.md).
 
-## Presentation - Google Slides
+# Database
+## Database Schema
+![Database Schema](https://raw.githubusercontent.com/Jenny16x/TeamSix/Jason/Pitcher_Salaries_ERD.png)
+
+# Presentation - Google Slides
 https://docs.google.com/presentation/d/1bLOD9xRlKs59oyxRPALq-vUpr1tfs63MJF6HQ-OcI0s/edit?usp=sharing
 
 <br>
 
-## Tableau Dashboard
+# Tableau Dashboard
 Our dashboard will be created using Tableau (Link to [Dashboard](https://public.tableau.com/app/profile/dan.jones7483/viz/MoneyBall2_0/AvgSalaryHeight)).
 
 # Communication Protocol
