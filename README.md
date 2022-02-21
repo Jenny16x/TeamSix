@@ -61,8 +61,13 @@ https://docs.google.com/presentation/d/1bLOD9xRlKs59oyxRPALq-vUpr1tfs63MJF6HQ-Oc
 
 <br>
 
-# Tableau Dashboard
-Our dashboard will be created using Tableau (Link to [Dashboard](https://public.tableau.com/app/profile/dan.jones7483/viz/MoneyBall2_0/AvgSalaryHeight)).
+# Dashboard
+We are currently utilizing Tableau to create our dashboard (Link to [Dashboard](https://public.tableau.com/app/profile/dan.jones7483/viz/MoneyBall2_0/AvgSalaryHeight)).
+
+<br><br>
+We are also exploring connecting our database to an interactive webpage for our dashboard.
+![Webpage](./images/webpage_screenshot.png)
+<br>Some details about how we are planning to create this page can be found [here](https://github.com/Jenny16x/TeamSix/blob/jenny/Jennys_README.md#the-original-structure-vs-teamsix-modified-structure).
 
 # Communication Protocol
 Our team will communicate during class sessions and through our own project group Slack channel. Additionally, we will be meeting once a week outside of class to discuss progress, help each other, and ensure all segment deliverables are ready for submission by Sunday evening.
