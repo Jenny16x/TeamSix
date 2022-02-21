@@ -31,6 +31,8 @@ After this, the dataframe was combined with the `Players.csv` containing persona
 With the dataframe effectively filtered and cleaned, the final steps were to organize the columns in a way that made sense and export the file as [`pitcher_salaries_cleaned.csv`](./data-cleaning/pitcher_salaries_cleaned.csv).
 
 # The Machine Learning Model
+Our first exploratory analysis looking at salaries vs ERA can be found [here](./Segment-1/Segment_1_ML_Model.ipynb).
+<br>
 To determine the initial machine learning model, we analyzed a dataset from 2010-2016 that had baseball salary and ERA statistics.  This is only an example dataset and the final will be for the years 2016-2019.  In the initial scatter plot below, we observed as the ERA decreased, the salary increased, but there were some outliers.  
 
 <br>![Scatter1](https://user-images.githubusercontent.com/90434559/152698416-0c15916f-dac5-4df8-b14e-93984f212fbb.png)
