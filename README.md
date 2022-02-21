@@ -44,6 +44,9 @@ https://docs.google.com/presentation/d/1bLOD9xRlKs59oyxRPALq-vUpr1tfs63MJF6HQ-Oc
 
 <br>
 
+## Tableau Dashboard
+Our dashboard will be created using Tableau (Link to [Dashboard](https://public.tableau.com/app/profile/dan.jones7483/viz/MoneyBall2_0/AvgSalaryHeight)).
+
 # Communication Protocol
 Our team will communicate during class sessions and through our own project group Slack channel. Additionally, we will be meeting once a week outside of class to discuss progress, help each other, and ensure all segment deliverables are ready for submission by Sunday evening.
 <br>
