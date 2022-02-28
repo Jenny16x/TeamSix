@@ -72,8 +72,14 @@ To help narrow down which features to focus on for our machine learning model, w
 <br>
 The details of the analysis (data preprocessing, random forest analysis, results, etc.) can be found [here](./random-forest-analysis/README_random-forest.md).
 
+<br>
+
 ## Neural Network Model
-Since neural networks are effective at modeling complex and/or non-linear relationships, we attempted to create a neural network model for our salary-prediction project. We initially started by using a regression model on select features, which produced a highly ineffective model with extremely high loss and MSE.<br>
+#### *Overview*
+Since neural networks are effective at modeling complex and/or non-linear relationships, we attempted to create a neural network model for our salary-prediction project. 
+
+#### *Model Implementation*
+We initially started by using a regression model on select features, which produced a highly ineffective model with extremely high loss and MSE.<br>
 ![NN1 Model- Loss Plot](https://raw.githubusercontent.com/Jenny16x/TeamSix/alyssa/neural-network/images/NN1-loss.png)
 ![NN1 Model- MSE Plot](https://raw.githubusercontent.com/Jenny16x/TeamSix/alyssa/neural-network/images/NN1-MSE.png)<br>
 
@@ -83,7 +89,15 @@ Using a log-10 transformation *did* improve the metrics for the neural network m
 ![NN2 Model- Loss Plot](https://raw.githubusercontent.com/Jenny16x/TeamSix/alyssa/neural-network/images/NN2-loss.png)
 ![NN2 Model- MSE Plot](https://raw.githubusercontent.com/Jenny16x/TeamSix/alyssa/neural-network/images/NN2-MSE.png)<br>
 
+#### *Results*
 Due to the poor performance of the neural network model with our dataset, we determined that a neural network model was not well-suited for the purpose of our project.
+
+#### *Benefits & Limitations*
+Some benefits of using a neural network model would be that they are often effective at modeling complex and non-linear relationships, and can weigh feature significance in a more sophisticated way than standard machine learning models. 
+<br>
+A few major limitations of this model are:
+- Neural networks require significant data preprocessing; like a real brain, neural network models are prone to learning 'bad habits' when training, so thorough preprocessing is required to avoid this.
+- Neural networks are highly customizable, so it can be difficult to determine the optimal structure for the neural network. We found that to be the case in our situation- where even after various attempts at optimization, some good and some bad, we were unable to produce an effective neural network model.
 
 
 ## Boosted Random Forest Analysis
@@ -95,6 +109,10 @@ Another model we explored using was a polynomial regression analysis. We thought
 Changing the degrees in the model resulted in different predicted outcomes. 
 <br>
 #### *Benefits and Limitations*
+Some benefits to polynomial regression are that they work well on any size dataset, and they are effective at analyzing non-linear relationships.<br>
+
+Some limitations to this model are that outliers can negatively impact performance, and it can be difficult to determine the optimal polynomial degree for your dataset- and choosing the wrong polynomial degree will result in poor predictive power.
+
 
 # Database
 ## Database Schema
