@@ -11,3 +11,10 @@ Next, the data had to be cleaned after being filtered. The first step in this pr
 After this, the dataframe was combined with the "Players.csv" containing personal information. The purpose of linking the file was primarily to get the player names linked as well as some other stat such as height, weight, etc. The files were merged on the 'Player ID" using PANDAS. Once the names were linked, the data was further cleaned by changing the column acronyms to their full names for readability. Unfortuantely, player age was not provided but we felt like this was an important data point to have. To attain the player age, we created a new column by subtracting the 'Year" column from the "Year Born". This effectively gave us the player age for each data point. 
 
 With the dataframe effectively filtered and cleaned, the final steps were to organize the columns in a way that made sense and export the file as "pitcher_salaries_cleaned.csv". 
+
+
+## Polynomial Regression Analysis
+
+I performed a polynomial regression anlaysis on the data after finding this online. I chose this type of model because I thought it might perform better than a normal linear regression model given the data in many cases is only slightly linear at best. The polynomial regression model attempted to overcome this by adding a curvature to what would otherwise be a flat prediction line. Different degrees to the model resulted in different prediction outcomes. Currently, I've applied the polynomial regression model on "ERA" (earned run average) and "Strike Outs". 
+
+For both models, the prediction results were not realistic. However, when adding the element of a 
