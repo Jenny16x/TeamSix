@@ -6,8 +6,8 @@
 - [Machine Learning Model](https://github.com/Jenny16x/TeamSix#the-machine-learning-model)
     - [Exploratory Analysis](https://github.com/Jenny16x/TeamSix#exploratory-analysis)
     - [Random Forest Analysis](https://github.com/Jenny16x/TeamSix#random-forest-analysis)
+    - [Updated Random Forest Analysis](https://github.com/Jenny16x/TeamSix#updated-random-forest-analysis)
     - [Neural Network Model](https://github.com/Jenny16x/TeamSix#neural-network-model)
-    - [Boosted Random Forest Analysis](https://github.com/Jenny16x/TeamSix#boosted-random-forest-analysis)
     - [Polynomial Regression Analysis](https://github.com/Jenny16x/TeamSix#polynomial-regression-analysis)
 - [Database](https://github.com/Jenny16x/TeamSix#database)
 - [Presentation](https://github.com/Jenny16x/TeamSix#presentation---google-slides)
@@ -74,6 +74,17 @@ The details of the analysis (data preprocessing, random forest analysis, results
 
 <br>
 
+## Updated Random Forest Analysis
+The random forest model was updated with our current data set of 1990-2019 data.  Previously, the model had an accuracy score of 52.6%.  Once the new data set was uploaded, the accuracy score improved to 62.7%
+
+![image](https://user-images.githubusercontent.com/90434559/155923312-84090142-70da-4301-8a35-de2f1469eb2a.png)
+
+
+#### Binned Age and Salaries
+In addition to updating the random forest model with the new data set, an attempt was made to improve the accuracy score by also binning the ages.  Unfortunately, this did not improve the score and produced a less accurate result of 60.4%
+
+![image](https://user-images.githubusercontent.com/90434559/155923002-bfc8d932-8bae-45b7-b024-0a0e7a431a2e.png)
+
 ## Neural Network Model
 #### *Overview*
 Since neural networks are effective at modeling complex and/or non-linear relationships, we attempted to create a neural network model for our salary-prediction project. 
@@ -100,7 +111,7 @@ A few major limitations of this model are:
 - Neural networks are highly customizable, so it can be difficult to determine the optimal structure for the neural network. We found that to be the case in our situation- where even after various attempts at optimization, some good and some bad, we were unable to produce an effective neural network model.
 
 
-## Boosted Random Forest Analysis
+![image](https://user-images.githubusercontent.com/90434559/155923002-bfc8d932-8bae-45b7-b024-0a0e7a431a2e.png)
 
 ## Polynomial Regression Analysis
 #### *Overview*
