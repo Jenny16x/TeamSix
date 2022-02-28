@@ -95,7 +95,7 @@ Due to the poor performance of the neural network model with our dataset, we det
 ![Database Schema](https://raw.githubusercontent.com/Jenny16x/TeamSix/Jason/Pitcher_Salaries_ERD.png)
 
 # Presentation - Google Slides
-https://docs.google.com/presentation/d/1bLOD9xRlKs59oyxRPALq-vUpr1tfs63MJF6HQ-OcI0s/edit?usp=sharing
+https://docs.google.com/presentation/d/122tb9H_bUzxNxB_guh8NMsYfO0LZ8E77e_JLKwIQAJ4/edit#slide=id.p
 
 <br>
 
