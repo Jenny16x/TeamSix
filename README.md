@@ -4,7 +4,11 @@
 - [Overview](https://github.com/Jenny16x/TeamSix#project-overview)
 - [Data Preprocessing](https://github.com/Jenny16x/TeamSix#data-preprocessing)
 - [Machine Learning Model](https://github.com/Jenny16x/TeamSix#the-machine-learning-model)
+    - [Exploratory Analysis](https://github.com/Jenny16x/TeamSix#exploratory-analysis)
     - [Random Forest Analysis](https://github.com/Jenny16x/TeamSix#random-forest-analysis)
+    - [Neural Network Model](https://github.com/Jenny16x/TeamSix#neural-network-model)
+    - [Boosted Random Forest Analysis](https://github.com/Jenny16x/TeamSix#boosted-random-forest-analysis)
+    - [Polynomial Regression Analysis](https://github.com/Jenny16x/TeamSix#polynomial-regression-analysis)
 - [Database](https://github.com/Jenny16x/TeamSix#database)
 - [Presentation](https://github.com/Jenny16x/TeamSix#presentation---google-slides)
 - [Dashboard](https://github.com/Jenny16x/TeamSix#dashboard)
@@ -45,6 +49,8 @@ After this, the dataframe was combined with the `Players.csv` containing persona
 With the dataframe effectively filtered and cleaned, the final steps were to organize the columns in a way that made sense and export the file as [`pitcher_salaries_cleaned.csv`](./data-cleaning/pitcher_salaries_cleaned.csv).
 
 # The Machine Learning Model
+
+## Exploratory Analysis
 Our first exploratory analysis looking at salaries vs ERA can be found [here](./Segment-1/Segment_1_ML_Model.ipynb).
 <br>
 To determine the initial machine learning model, we analyzed a dataset from 2010-2016 that had baseball salary and ERA statistics.  This is only an example dataset and the final will be for the years 2016-2019.  In the initial scatter plot below, we observed as the ERA decreased, the salary increased, but there were some outliers.  
@@ -66,6 +72,24 @@ To help narrow down which features to focus on for our machine learning model, w
 <br>
 The details of the analysis (data preprocessing, random forest analysis, results, etc.) can be found [here](./random-forest-analysis/README_random-forest.md).
 
+## Neural Network Model
+Since neural networks are effective at modeling complex and/or non-linear relationships, we attempted to create a neural network model for our salary-prediction project. We initially started by using a regression model on select features, which produced a highly ineffective model with extremely high loss and MSE.<br>
+![NN1 Model- Loss Plot](https://raw.githubusercontent.com/Jenny16x/TeamSix/alyssa/neural-network/images/NN1-loss.png)
+![NN1 Model- MSE Plot](https://raw.githubusercontent.com/Jenny16x/TeamSix/alyssa/neural-network/images/NN1-MSE.png)<br>
+
+To improve the model, we decided to peform a log-transformation on the `Salary` column in order to standardize the salaries in an attempt to help the model work better. We predicted that the wide variation/distribution in salaries for MLB pitchers may have contributed to the initial neural network's poor performance.<br>
+
+Using a log-10 transformation *did* improve the metrics for the neural network model significantly, however the loss and MSE were still very high- too high to be considered an accurate model.<br>
+![NN2 Model- Loss Plot](https://raw.githubusercontent.com/Jenny16x/TeamSix/alyssa/neural-network/images/NN2-loss.png)
+![NN2 Model- MSE Plot](https://raw.githubusercontent.com/Jenny16x/TeamSix/alyssa/neural-network/images/NN2-MSE.png)<br>
+
+Due to the poor performance of the neural network model with our dataset, we determined that a neural network model was not well-suited for the purpose of our project.
+
+
+## Boosted Random Forest Analysis
+
+## Polynomial Regression Analysis
+
 # Database
 ## Database Schema
 ![Database Schema](https://raw.githubusercontent.com/Jenny16x/TeamSix/Jason/Pitcher_Salaries_ERD.png)
@@ -83,7 +107,5 @@ We are also exploring connecting our database to an interactive webpage for our 
 ![Webpage](./images/webpage_screenshot.png)
 <br>Some details about how we are planning to create this page can be found [here](https://github.com/Jenny16x/TeamSix/blob/jenny/Jennys_README.md#the-original-structure-vs-teamsix-modified-structure).
 
-# Communication Protocol
-Our team will communicate during class sessions and through our own project group Slack channel. Additionally, we will be meeting once a week outside of class to discuss progress, help each other, and ensure all segment deliverables are ready for submission by Sunday evening.
-<br>
+
 
