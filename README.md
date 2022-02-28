@@ -17,4 +17,3 @@ With the dataframe effectively filtered and cleaned, the final steps were to org
 
 I performed a polynomial regression anlaysis on the data after finding this online. I chose this type of model because I thought it might perform better than a normal linear regression model given the data in many cases is only slightly linear at best. The polynomial regression model attempted to overcome this by adding a curvature to what would otherwise be a flat prediction line. Different degrees to the model resulted in different prediction outcomes. Currently, I've applied the polynomial regression model on "ERA" (earned run average) and "Strike Outs". 
 
-For both models, the prediction results were not realistic. However, when adding the element of a 
