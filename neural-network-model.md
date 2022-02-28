@@ -22,3 +22,27 @@ The features were standardized using `StandardScaler()`.
 
 ## Building the Neural Network Framework
 ---
+Initially, there were two hidden layers defined, each with 21 neurons (the number of features x 3), and the output layer was set equal to 1. Each of the layers, including the output layer, were set to use the `relu` activation function- since this activation function is supposed to be one of the most reliable for regression problems.
+
+<br>
+
+## Compiling the Model
+---
+The loss metric chosen was `mean_squared_error`, which is suggested for regression problems. The optimizer used was `adam`, and the performance metric was set to `mse`.
+
+## Training the Model
+---
+For this initial training set, 200 epochs were selected. This would hopefully ensure there were enough epochs to see if the model was training effectively, but few enough that there wouldn't be excessive wait times between runs.
+
+## Evaluation of the Model
+---
+The loss and mse were calculated to be extremely large values (see image), indicating that the model needed significant optimization. 
+
+![Metrics from first Neural Network Model](./neural-network/images/NN1-metrics.png)<br>
+
+Plots of the loss and MSE were also generated to help evaluate how well the model was able to learn. <br>
+
+![Plot of Loss](./neural-network/images/NN1-loss.png)<br>
+![Plot of MSE](./neural-network/images/NN1-MSE.png)
+
+From these plots, the loss and MSE did improve over time, but after approximately 30-40 epochs the model plateaued and was unable to continue learning. The loss and MSE for this model were very extremely poor, demonstrating that there would either need to be significant optimization to make it work, or a neural network was not an appropriate model for this dataset. 
