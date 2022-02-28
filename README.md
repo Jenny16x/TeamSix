@@ -89,6 +89,12 @@ Due to the poor performance of the neural network model with our dataset, we det
 ## Boosted Random Forest Analysis
 
 ## Polynomial Regression Analysis
+#### *Overview*
+Another model we explored using was a polynomial regression analysis. We thought it might perform better than a typical linear regression model given that many of the pitching statistics analyzed were only moderately correlated with pitcher salary. The polynomial regression model attempts to overcome this issue by adding a curvature to what would otherwise be a flat prediction line. 
+<br>
+Changing the degrees in the model resulted in different predicted outcomes. 
+<br>
+#### *Benefits and Limitations*
 
 # Database
 ## Database Schema
