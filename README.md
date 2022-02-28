@@ -29,4 +29,4 @@ Our team will communicate during class sessions and through our own project grou
 <br>
 
 # Tableau
-Created multiple displays showing the pattern of pay for various factors. Used physical, statiscal, and yearly reports to create visual charts.
+Created multiple displays showing the pattern of pay for various factors. Used physical, statiscal, and yearly reports to create visual charts. I have also created two racebar charts to show how the data moves when selecting differnet factors.
