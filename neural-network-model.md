@@ -1,4 +1,4 @@
-# Neural Network Model
+# Neural Network Model v1.0
 Since neural networks are effective at modeling non-linear and complex relationships, we attempted to employ one for our salary-prediction project. 
 
 ## Data Prep
