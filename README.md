@@ -106,19 +106,16 @@ Due to the poor performance of the neural network model with our dataset, we det
 #### *Benefits & Limitations*
 Some benefits of using a neural network model would be that they are often effective at modeling complex and non-linear relationships, and can weigh feature significance in a more sophisticated way than standard machine learning models. 
 <br>
+
 A few major limitations of this model are:
 - Neural networks require significant data preprocessing; like a real brain, neural network models are prone to learning 'bad habits' when training, so thorough preprocessing is required to avoid this.
 - Neural networks are highly customizable, so it can be difficult to determine the optimal structure for the neural network. We found that to be the case in our situation- where even after various attempts at optimization, some good and some bad, we were unable to produce an effective neural network model.
 
 
-![image](https://user-images.githubusercontent.com/90434559/155923002-bfc8d932-8bae-45b7-b024-0a0e7a431a2e.png)
-
 ## Polynomial Regression Analysis
 #### *Overview*
-Another model we explored using was a polynomial regression analysis. We thought it might perform better than a typical linear regression model given that many of the pitching statistics analyzed were only moderately correlated with pitcher salary. The polynomial regression model attempts to overcome this issue by adding a curvature to what would otherwise be a flat prediction line. 
-<br>
-Changing the degrees in the model resulted in different predicted outcomes. 
-<br>
+Another model we explored using was a polynomial regression analysis. We thought it might perform better than a typical linear regression model given that many of the pitching statistics analyzed were only moderately correlated with pitcher salary. The polynomial regression model attempts to overcome this issue by adding a curvature to what would otherwise be a flat prediction line.<br>
+
 #### *Benefits and Limitations*
 Some benefits to polynomial regression are that they work well on any size dataset, and they are effective at analyzing non-linear relationships.<br>
 
@@ -135,7 +132,15 @@ https://docs.google.com/presentation/d/122tb9H_bUzxNxB_guh8NMsYfO0LZ8E77e_JLKwIQ
 <br>
 
 # Dashboard
-We are currently utilizing Tableau to create our dashboard (Link to [Dashboard](https://public.tableau.com/app/profile/dan.jones7483/viz/MoneyBall2_0/AvgSalaryHeight)).
+We are currently utilizing Tableau to create our dashboard (Link to [Dashboard](https://public.tableau.com/app/profile/dan.jones7483/viz/MoneyBall2_0/AvgSalaryHeight)).<br>
+
+This dashboard will feature tables and graphs displaying relationships between player salary and various features.<br>
+
+![Average Salary by Team - 2016](./images/tableau-1.png)<br>
+
+![Pitcher Data Table](./images/tableau-2.png)<br>
+
+
 
 <br><br>
 We are also exploring connecting our database to an interactive webpage for our dashboard.
