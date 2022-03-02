@@ -51,7 +51,7 @@ With the dataframe effectively filtered and cleaned, the final steps were to org
 # The Machine Learning Model
 
 ## Exploratory Analysis
-Our first exploratory analysis looking at salaries vs ERA can be found [here](./exploratory-analysis_linear-regression/Segment_1_ML_Model.ipynb).
+Our first exploratory analysis looking at salaries vs ERA can be found [here](./model-selection/exploratory-analysis_linear-regression/Segment_1_ML_Model.ipynb).
 <br>
 To determine the initial machine learning model, we analyzed a dataset from 2010-2016 that had baseball salary and ERA statistics.  This is only an example dataset and the final will be for the years 2016-2019.  In the initial scatter plot below, we observed as the ERA decreased, the salary increased, but there were some outliers.  
 
@@ -68,9 +68,9 @@ As we develop the dataset, our machine learning model will evolve and employ uns
 
 ## Random Forest Analysis
 To help narrow down which features to focus on for our machine learning model, we employed a random forest analysis to obtain a ranking of the various features' importances (see below).
-<br>![Random Forest Analysis Results](./random-forest-analysis/images/feature-importances_df.png)
+<br>![Random Forest Analysis Results](./model-selection/random-forest-analysis/images/feature-importances_df.png)
 <br>
-The details of the analysis (data preprocessing, random forest analysis, results, etc.) can be found [here](./random-forest-analysis/README_random-forest.md).
+The details of the analysis (data preprocessing, random forest analysis, results, etc.) can be found [here](./model-selection/random-forest-analysis/README_random-forest.md).
 
 <br>
 
