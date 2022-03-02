@@ -31,11 +31,11 @@ We will be using MLB pitching statistics and salary data for years 2016-2019 to 
 We sourced our pitching statistics and player salary data from [Lahman's Baseball Database.](http://www.seanlahman.com/baseball-archive/statistics/)
 <br>
 
-<br>
-[*jump to top*](https://github.com/Jenny16x/TeamSix#project-overview)
-
 ## What We Plan to Answer with Data
 We hope to be able to find pitcher metrics that are strongly correlated with salary in order to predict what a pitcher's salary is expected to be in the future.
+<br>
+
+[*jump to top*](https://github.com/Jenny16x/TeamSix#moneyball-20)
 
 <br>
 
@@ -49,6 +49,11 @@ Next, the data had to be cleaned after being filtered. The first step in this pr
 After this, the dataframe was combined with the `Players.csv` containing personal information. The purpose of linking the file was primarily to get the player names linked as well as some other stat such as height, weight, etc. The files were merged on the `Player ID` using PANDAS. Once the names were linked, the data was further cleaned by changing the column acronyms to their full names for readability. Unfortuantely, player age was not provided but we felt like this was an important data point to have. To attain the player age, we created a new column by subtracting the `Year` column from the `Year Born`. This effectively gave us the player age for each data point. 
 
 With the dataframe effectively filtered and cleaned, the final steps were to organize the columns in a way that made sense and export the file as [`pitcher_salaries_cleaned.csv`](./data-cleaning/pitcher_salaries_cleaned.csv).
+<br>
+
+[*jump to top*](https://github.com/Jenny16x/TeamSix#moneyball-20)
+
+<br>
 
 # The Machine Learning Model
 
@@ -122,14 +127,37 @@ Another model we explored using was a polynomial regression analysis. We thought
 Some benefits to polynomial regression are that they work well on any size dataset, and they are effective at analyzing non-linear relationships.<br>
 
 Some limitations to this model are that outliers can negatively impact performance, and it can be difficult to determine the optimal polynomial degree for your dataset- and choosing the wrong polynomial degree will result in poor predictive power.
+<br>
 
+[*jump to top*](https://github.com/Jenny16x/TeamSix#moneyball-20)
+<br>
 
 # Database
 ## Database Schema
 ![Database Schema](https://raw.githubusercontent.com/Jenny16x/TeamSix/Jason/Pitcher_Salaries_ERD.png)
+<br>
+
+[*jump to top*](https://github.com/Jenny16x/TeamSix#moneyball-20)
+
+<br>
 
 # Presentation - Google Slides
-https://docs.google.com/presentation/d/122tb9H_bUzxNxB_guh8NMsYfO0LZ8E77e_JLKwIQAJ4/edit#slide=id.p
+We have also created a [presentation](https://docs.google.com/presentation/d/122tb9H_bUzxNxB_guh8NMsYfO0LZ8E77e_JLKwIQAJ4/edit#slide=id.p) in Google Slides to give a high-level overview of our project.
+<br>
+
+![Screenshot of Google Slides Presentation](./resources/images/presentation_snapshot.png)
+
+This presentation will provide the following information:
+- Our topic
+- Reason for choosing this topic
+- Description of our data sources
+- What questions we hoped to answer with this project
+- Description of our data exploration
+- Analysis of our work
+- Brief description of technologies, languages, tools, and algorithms used in the project
+<br>
+
+[*jump to top*](https://github.com/Jenny16x/TeamSix#moneyball-20)<br>
 
 <br>
 
@@ -142,9 +170,8 @@ This dashboard will feature tables and graphs displaying relationships between p
 
 ![Average Salary by Team - 2016](./resources/images/tableau-1.png)<br>
 
+
 ![Pitcher Data Table](./resources/images/tableau-2.png)<br>
-
-
 
 <br><br>
 
@@ -154,7 +181,9 @@ Some details about how we created this page can be found [here](https://github.c
 
 ![Webpage](./resources/images/webpage_screenshot_UPDATED.png)<br>
 
+<br>
 
+[*jump to top*](https://github.com/Jenny16x/TeamSix#moneyball-20)
 
 
 
