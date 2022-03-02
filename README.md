@@ -12,7 +12,7 @@
 - [Database](https://github.com/Jenny16x/TeamSix#database)
 - [Presentation](https://github.com/Jenny16x/TeamSix#presentation---google-slides)
 - [Dashboard](https://github.com/Jenny16x/TeamSix#dashboard)
-- [Communication Protocol](https://github.com/Jenny16x/TeamSix#communication-protocol)
+
 
 
 ## Project Overview
