@@ -1,4 +1,4 @@
-# Predicting Pitcher Salaries
+# MoneyBall 2.0
 
 ## Table of Contents
 - [Overview](https://github.com/Jenny16x/TeamSix#project-overview)
@@ -31,6 +31,8 @@ We will be using MLB pitching statistics and salary data for years 2016-2019 to 
 We sourced our pitching statistics and player salary data from [Lahman's Baseball Database.](http://www.seanlahman.com/baseball-archive/statistics/)
 <br>
 
+<br>
+[*jump to top*](https://github.com/Jenny16x/TeamSix#project-overview)
 
 ## What We Plan to Answer with Data
 We hope to be able to find pitcher metrics that are strongly correlated with salary in order to predict what a pitcher's salary is expected to be in the future.
