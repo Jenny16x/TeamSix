@@ -123,6 +123,10 @@ A few major limitations of this model are:
 #### *Overview*
 Another model we explored using was a polynomial regression analysis. We thought it might perform better than a typical linear regression model given that many of the pitching statistics analyzed were only moderately correlated with pitcher salary. The polynomial regression model attempts to overcome this issue by adding a curvature to what would otherwise be a flat prediction line.<br>
 
+![PR_LR_Model- ERA Plot](https://github.com/Jenny16x/TeamSix/blob/main/model-selection/polynomial-regression/images/ERA_LR.png)
+![PR_LR Model- SO Plot](https://github.com/Jenny16x/TeamSix/blob/main/model-selection/polynomial-regression/images/SO_LR.png)<br>
+
+
 #### *Benefits and Limitations*
 Some benefits to polynomial regression are that they work well on any size dataset, and they are effective at analyzing non-linear relationships.<br>
 
