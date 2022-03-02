@@ -132,6 +132,8 @@ https://docs.google.com/presentation/d/122tb9H_bUzxNxB_guh8NMsYfO0LZ8E77e_JLKwIQ
 <br>
 
 # Dashboard
+
+## Tableau Dashboard
 We are currently utilizing Tableau to create our dashboard (Link to [Dashboard](https://public.tableau.com/app/profile/dan.jones7483/viz/MoneyBall2_0/AvgSalaryHeight)).<br>
 
 This dashboard will feature tables and graphs displaying relationships between player salary and various features.<br>
@@ -143,9 +145,14 @@ This dashboard will feature tables and graphs displaying relationships between p
 
 
 <br><br>
-We are also exploring connecting our database to an interactive webpage for our dashboard.
-![Webpage](./resources/images/webpage_screenshot.png)
-<br>Some details about how we are planning to create this page can be found [here](https://github.com/Jenny16x/TeamSix/blob/jenny/Jennys_README.md#the-original-structure-vs-teamsix-modified-structure).
+
+## Webpage Dashboard
+We are also utilizing an interactive [webpage](https://jenny16x.github.io/TeamSix_Website/) to display our project.<br><br>
+Some details about how we created this page can be found [here](https://github.com/Jenny16x/TeamSix/blob/jenny/Jennys_README.md#the-original-structure-vs-teamsix-modified-structure).
+
+![Webpage](./resources/images/webpage_screenshot_UPDATED.png)<br>
+
+
 
 
 
