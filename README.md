@@ -51,7 +51,7 @@ With the dataframe effectively filtered and cleaned, the final steps were to org
 # The Machine Learning Model
 
 ## Exploratory Analysis
-Our first exploratory analysis looking at salaries vs ERA can be found [here](./Segment-1/Segment_1_ML_Model.ipynb).
+Our first exploratory analysis looking at salaries vs ERA can be found [here](./exploratory-analysis_linear-regression/Segment_1_ML_Model.ipynb).
 <br>
 To determine the initial machine learning model, we analyzed a dataset from 2010-2016 that had baseball salary and ERA statistics.  This is only an example dataset and the final will be for the years 2016-2019.  In the initial scatter plot below, we observed as the ERA decreased, the salary increased, but there were some outliers.  
 
@@ -136,15 +136,15 @@ We are currently utilizing Tableau to create our dashboard (Link to [Dashboard](
 
 This dashboard will feature tables and graphs displaying relationships between player salary and various features.<br>
 
-![Average Salary by Team - 2016](./images/tableau-1.png)<br>
+![Average Salary by Team - 2016](./resources/images/tableau-1.png)<br>
 
-![Pitcher Data Table](./images/tableau-2.png)<br>
+![Pitcher Data Table](./resources/images/tableau-2.png)<br>
 
 
 
 <br><br>
 We are also exploring connecting our database to an interactive webpage for our dashboard.
-![Webpage](./images/webpage_screenshot.png)
+![Webpage](./resources/images/webpage_screenshot.png)
 <br>Some details about how we are planning to create this page can be found [here](https://github.com/Jenny16x/TeamSix/blob/jenny/Jennys_README.md#the-original-structure-vs-teamsix-modified-structure).
 
 
