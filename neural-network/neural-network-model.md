@@ -31,12 +31,12 @@ For this initial training set, 200 epochs were selected. This would hopefully en
 ## Evaluation of the Model
 The loss and mse were calculated to be extremely large values (see image), indicating that the model needed significant optimization. 
 
-![Metrics from first Neural Network Model](./neural-network/images/NN1-metrics.png)<br>
+![Metrics from first Neural Network Model](./images/NN1-metrics.png)<br>
 
 Plots of the loss and MSE were also generated to help evaluate how well the model was able to learn. <br>
 
-![Plot of Loss](./neural-network/images/NN1-loss.png)<br>
-![Plot of MSE](./neural-network/images/NN1-MSE.png)
+![Plot of Loss](./images/NN1-loss.png)<br>
+![Plot of MSE](./images/NN1-MSE.png)
 
 From these plots, the loss and MSE did improve over time, but after approximately 30-40 epochs the model plateaued and was unable to continue learning. The loss and MSE for this model were very extremely poor, demonstrating that there would either need to be significant optimization to make it work, or a neural network was not an appropriate model for this dataset. 
 
@@ -55,14 +55,15 @@ This time, the target ouput for the model was the log-transformed salary instead
 This model using the log-transformed salaries instead of raw salaries performed much better than the initial model. Unfortunately, the metrics were still demonstrating that the model was ineffective at predicting salaries. <br>
 
 
-Looking at the metrics, loss and MSE are still very high.
-![NN2 Metrics](./neural-network/images/NN2-metrics.png)<br>
+Looking at the metrics, loss and MSE are still very high.<br>
+
+![NN2 Metrics](./images/NN2-metrics.png)<br>
 
 Additionally, viewing plots for the loss and MSE indicate that the model hits a plateau almost immediately, at around 5 epochs.<br>
 
-![NN2 Loss Plot](./neural-network/images/NN2-loss.png)<br>
+![NN2 Loss Plot](./images/NN2-loss.png)<br>
 
-![NN2 MSE Plot](./neural-network/images/NN2-MSE.png)<br>
+![NN2 MSE Plot](./images/NN2-MSE.png)<br>
 
 # Analysis
 Overall, after attempting several methods of optimizing the dataset and the model components, we were unable to produce a neural network model effective at predicting pitcher salary based on the pitcher's statistics. This indicated to us that we should try using a different type of model for our project.
