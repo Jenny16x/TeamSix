@@ -9,6 +9,9 @@ __pycache__/
 # Branch Folders
 alyssa/
 
+# data cleaning folder
+*/data-cleaning/.ipynb_checkpoints
+
 # Webpage files
 *.DS_Store
 */Webpage/.DS_Store
