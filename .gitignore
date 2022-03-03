@@ -15,6 +15,7 @@ alyssa/
 # junk folder - multivariate-regression
 */model-selection/multivariate-regresssion/junk/*
 model-selection/multivariate-regresssion/junk/*
+*/junk/*
 
 # Webpage files
 *.DS_Store
