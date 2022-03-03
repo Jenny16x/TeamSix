@@ -9,6 +9,10 @@ __pycache__/
 # Branch Folders
 alyssa/
 
+# Webpage files
+.DS_Store
+
+
 # Distribution / packaging
 .Python
 build/
