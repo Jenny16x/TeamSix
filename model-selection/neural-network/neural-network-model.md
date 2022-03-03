@@ -17,7 +17,7 @@ The training and testing sets were split using the `train_test_split()` method f
 The features were standardized using `StandardScaler()`.
 
 ## Building the Neural Network Framework
-Initially, there were two hidden layers defined, each with 21 neurons (the number of features x 3), and the output layer was set equal to 1. Each of the layers, including the output layer, were set to use the `relu` activation function- since this activation function is supposed to be one of the most reliable for regression problems.
+Initially, there were two hidden layers defined, each with 21 neurons (the number of features x 3), and the output layer was set equal to 1. Each of the layers, including the output layer, were set to use the `linear` activation function.
 
 <br>
 
