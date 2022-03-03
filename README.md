@@ -158,6 +158,24 @@ Some limitations to this model are that outliers can negatively impact performan
 [*jump to top*](https://github.com/Jenny16x/TeamSix#moneyball-20)
 <br>
 
+
+# The Final Model
+After exploring several models and features, it was decided to go back to the initial model using ERA and Salary.  However, based on what we learned throughout the process, there were a couple of updates from Model 1:
+  1. The dataset now included baseball statistics from 1990-2016
+  2. Only pitchers who played 7 innings were included
+  3. The natural log of the salaries were used instead of the actual salaries
+
+Based on the changes of the dataset and using the natural log for salaries, the following results were achieved:<br> 
+ 
+![Final Model Plot](https://user-images.githubusercontent.com/90434559/156635129-8fef3964-6d68-436b-9dd2-b5dacd0ed89a.png)<br>
+
+This was the most accurate model with a training and testing score of approximately 96%.<br>
+
+![Final Model Accuracy Metrics](https://user-images.githubusercontent.com/90434559/156635587-044ed958-a0ba-4a85-97e5-efdfca0a174b.png)<br>
+
+
+<br>
+
 # Database
 ## Database Schema
 ![Database Schema](https://raw.githubusercontent.com/Jenny16x/TeamSix/Jason/Pitcher_Salaries_ERD.png)
