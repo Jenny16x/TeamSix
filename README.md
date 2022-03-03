@@ -97,7 +97,7 @@ In addition to updating the random forest model with the new data set, an attemp
 > [Neural Network Analysis](./model-selection/neural-network/neural-network-model.md)
 
 #### *Overview*
-Since neural networks are effective at modeling complex and/or non-linear relationships, we attempted to create a neural network model for our salary-prediction project. 
+Since neural networks are effective at modeling complex and/or non-linear relationships, we attempted to create a neural network model for our salary-prediction project. Initially we attempted to use a regression model, but the performance was poor so we transitioned to using a classification model instead. Using classification instead of regression significantly improved the performance of the model.
 
 #### *Model Structure*
 The best neural network model we created was constructed as follows:
