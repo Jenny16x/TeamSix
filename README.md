@@ -160,6 +160,9 @@ Some limitations to this model are that outliers can negatively impact performan
 
 
 # The Final Model
+>[Final Model Folder](https://github.com/Jenny16x/TeamSix/tree/main/final-model)<br>
+>[Final Model Analysis Details](https://github.com/Jenny16x/TeamSix/blob/main/final-model/ML_README.md)<br>
+
 After exploring several models and features, it was decided to go back to the initial model using ERA and Salary.  However, based on what we learned throughout the process, there were a couple of updates from Model 1:
   1. The dataset now included baseball statistics from 1990-2016
   2. Only pitchers who played 7 innings were included
