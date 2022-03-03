@@ -93,7 +93,9 @@ In addition to updating the random forest model with the new data set, an attemp
 ![image](https://user-images.githubusercontent.com/90434559/155923002-bfc8d932-8bae-45b7-b024-0a0e7a431a2e.png)
 
 ## Neural Network Model
-> [Neural Network Analysis Folder](./model-selection/neural-network/)
+> [Neural Network Folder](./model-selection/neural-network/)<br>
+> [Neural Network Analysis](./model-selection/neural-network/neural-network-model.md)
+
 #### *Overview*
 Since neural networks are effective at modeling complex and/or non-linear relationships, we attempted to create a neural network model for our salary-prediction project. 
 
@@ -105,7 +107,7 @@ The best neural network model we created was constructed as follows:
     - OP - Outs Pitched
     - ERA - Earned Run Average
     - SO - Strike Outs
-- Model structure was changed
+- Neural Network
     - Hidden layers 1 & 2
         - 12 nodes each
         - `relu` activation
