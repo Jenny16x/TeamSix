@@ -55,15 +55,8 @@ After creating our initial dataset, we began cleaning up the data for use in our
 1. `Years` column filtered to include only 1990-2016
 2. Included only pitchers with >= 3 games started (GS)
 3. Null values were filtered out
-4. Columns/features that clearly did not contribute to salary were dropped 
-    - ex. birth place, 
-
-
-
-
-Next, the data had to be cleaned after being filtered. The first step in this process was to filter out any null values in the `Salary` column since these data points would be of no help. After this, a handful of columns were dropped because the stats they provided were either empty values or simply not relevant for this analysis. 
-
-After this, the dataframe was combined with the `Players.csv` containing personal information. The purpose of linking the file was primarily to get the player names linked as well as some other stat such as height, weight, etc. The files were merged on the `Player ID` using PANDAS. Once the names were linked, the data was further cleaned by changing the column acronyms to their full names for readability. Unfortuantely, player age was not provided but we felt like this was an important data point to have. To attain the player age, we created a new column by subtracting the `Year` column from the `Year Born`. This effectively gave us the player age for each data point. 
+4. Columns/features that clearly did not contribute to salary were dropped from the dataset
+    - ex. birth city, country of birth, city of birth, etc. 
 
 With the dataframe effectively filtered and cleaned, the final steps were to organize the columns in a way that made sense and export the file as [`pitcher_salaries_cleaned.csv`](./data-cleaning/pitcher_salaries_cleaned.csv).
 <br>
