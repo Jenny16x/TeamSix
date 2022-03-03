@@ -90,17 +90,24 @@ We tested the following models with varying results:
 
 
 ## Random Forest Analysis
-To help narrow down which features to focus on for our machine learning model, we employed a random forest analysis to obtain a ranking of the various features' importances (see below).
-<br>![Random Forest Analysis Results](./model-selection/random-forest-analysis/images/feature-importances_df.png)
+>[Random Forest Folder](https://github.com/Jenny16x/TeamSix/tree/main/model-selection/random-forest-analysis)<br>
+>[Random Forest Analysis Details](https://github.com/Jenny16x/TeamSix/blob/main/model-selection/random-forest-analysis/README_random-forest.md)<br>
+
+To help narrow down which features to focus on for our machine learning model, we employed a random forest analysis to obtain a ranking of the various features' importances (see below).<br>
+
+<br>![Random Forest Analysis Results](./resources/images/RF-original-features.png)
 <br>
-The details of the analysis (data preprocessing, random forest analysis, results, etc.) can be found [here](./model-selection/random-forest-analysis/README_random-forest.md).
+
 
 <br>
 
 ## Updated Random Forest Analysis
-The random forest model was updated with our current data set of 1990-2019 data.  Previously, the model had an accuracy score of 52.6%.  Once the new data set was uploaded, the accuracy score improved to 62.7%
+>[Updated Random Forest Folder](https://github.com/Jenny16x/TeamSix/tree/main/model-selection/updated_random-forest)<br>
+>[Updated Random Forest Analysis Details](https://github.com/Jenny16x/TeamSix/blob/main/model-selection/updated_random-forest/Updated-RF.md)<br>
 
-![image](https://user-images.githubusercontent.com/90434559/155923312-84090142-70da-4301-8a35-de2f1469eb2a.png)
+The random forest model was updated with our current data set of 1990-2016 data.  Previously, the model had an accuracy score of 52.6%.  Once the new data set was uploaded, the accuracy score improved to 62.7%
+
+![Updated RF Analysis- top features](https://user-images.githubusercontent.com/90434559/155923312-84090142-70da-4301-8a35-de2f1469eb2a.png)
 
 
 #### Binned Age and Salaries
@@ -110,7 +117,7 @@ In addition to updating the random forest model with the new data set, an attemp
 
 ## Neural Network Model
 > [Neural Network Folder](./model-selection/neural-network/)<br>
-> [Neural Network Analysis](./model-selection/neural-network/neural-network-model.md)
+> [Neural Network Analysis Details](./model-selection/neural-network/neural-network-model.md)
 
 #### *Overview*
 Since neural networks are effective at modeling complex and/or non-linear relationships, we attempted to create a neural network model for our salary-prediction project. Initially we attempted to use a regression model, but the performance was poor so we transitioned to using a classification model instead. Using classification instead of regression significantly improved the performance of the model.
@@ -159,7 +166,7 @@ A few major limitations of this model are:
 
 ## Polynomial Regression Analysis
 > [Polynomial Regression Folder](https://github.com/Jenny16x/TeamSix/tree/main/model-selection/polynomial-regression)<br>
-> [Polynomial Regression Analysis](https://github.com/Jenny16x/TeamSix/blob/main/model-selection/polynomial-regression/polynomial-regression.md)<br>
+> [Polynomial Regression Analysis Details](https://github.com/Jenny16x/TeamSix/blob/main/model-selection/polynomial-regression/polynomial-regression.md)<br>
 #### *Overview*
 Another model we explored using was a polynomial regression analysis. We thought it might perform better than a typical linear regression model given that many of the pitching statistics analyzed were only moderately correlated with pitcher salary. The polynomial regression model attempts to overcome this issue by adding a curvature to what would otherwise be a flat prediction line.<br>
 
