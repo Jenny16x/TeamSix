@@ -13,7 +13,7 @@ alyssa/
 */data-cleaning/.ipynb_checkpoints
 
 # junk folder - multivariate-regression
-*/model-selection/multivariate-regresssion/junk/
+*/model-selection/multivariate-regresssion/junk/*
 
 # Webpage files
 *.DS_Store
