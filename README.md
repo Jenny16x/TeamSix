@@ -93,11 +93,15 @@ We tested the following models with varying results:
 >[Random Forest Folder](https://github.com/Jenny16x/TeamSix/tree/main/model-selection/random-forest-analysis)<br>
 >[Random Forest Analysis Details](https://github.com/Jenny16x/TeamSix/blob/main/model-selection/random-forest-analysis/README_random-forest.md)<br>
 
-To help narrow down which features to focus on for our machine learning model, we employed a random forest analysis to obtain a ranking of the various features' importances (see below).<br>
+To help narrow down which features to focus on for our machine learning model, we employed a random forest analysis to obtain a ranking of the various features' importances. This initial random forest analysis included years 2016-2019 (performed prior to creating final dataset). Using raw salary values in the analysis produced poor results, so salaries were binned using pandas `qcut()` method to create 3 equal salary bins.<br>
+
+#### *Results*
+The final results produced an accuracy score of 52.5%, which was not great- but we were able to get a ranking of feature importances to help us narrow our focus.<br>
+
+![Original RF Analysis Accuracy Score](https://raw.githubusercontent.com/Jenny16x/TeamSix/main/model-selection/random-forest-analysis/images/binned-acc_score.png)
 
 <br>![Random Forest Analysis Results](./resources/images/RF-original-features.png)
 <br>
-
 
 <br>
 
