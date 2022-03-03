@@ -18,7 +18,7 @@
 ## Project Overview
 
 ### Topic
-For this project, we will be creating a supervised machine learning model to take in MLB pitcher statistics to predict their expected salaries in the future.
+For this project, we created a supervised machine learning model to predict MLB pitcher salary based on their Earned Run Average (ERA).
 <br>
 
 ### Reasoning
@@ -26,13 +26,13 @@ We selected this topic because an abundance of baseball statistics data is readi
 <br>
 
 ### Data Sources
-We will be using MLB pitching statistics and salary data for years 2016-2019 to train our model. We chose to use multiple years of data to imporove our model's accuracy. We chose not to include more recent years (2020 & 2021) because of the signinficant impact the COVID-19 pandemic had on professional sports. 
+We will be using MLB pitching statistics and salary data for years 1990-2016 to train our model. We chose to use a large range of years to ensure we had an adequate amount of data to work with to train and test our model. We chose not to include more recent years (2020 & 2021) because of the signinficant impact the COVID-19 pandemic had on professional sports. 
 
 We sourced our pitching statistics and player salary data from [Lahman's Baseball Database.](http://www.seanlahman.com/baseball-archive/statistics/)
 <br>
 
 ## What We Plan to Answer with Data
-We hope to be able to find pitcher metrics that are strongly correlated with salary in order to predict what a pitcher's salary is expected to be in the future.
+We were hoping to create a model that could accurately predict what a starting MLB pitcher's salary would be based on their ERA.
 <br>
 
 [*jump to top*](https://github.com/Jenny16x/TeamSix#moneyball-20)
@@ -40,9 +40,26 @@ We hope to be able to find pitcher metrics that are strongly correlated with sal
 <br>
 
 # Data Preprocessing
-To better analyze the pitcher salary data, we needed to first combine and clean the data files we had. In order to attain all of the neccessary information for the analysis, we used three seperate CSV files - 1) Salaries 2) People & 3) Pitchers. The `Salaries.csv` file contained salary data for all players in the league, while the `Peoples.csv` containted their names and personal information, and the `Pitchers.csv` file contained stats for the pitchers. 
 
-The first step in cleaning the data was combining the `Salaries.csv` and `Pitcher.csv` by merging the dataframes on the `Player ID` by using PANDAS. The next step was to filter by the years we wanted. For this analysis, we decided to use years 1990 - 2016, approzimately 30 years of data. This ensured that we would have enough quality data points. Next, the data was further filtered by the number of games started. To eliminate outliers and filter by only starting pitchers, we required a minimum of *at least 3 games started*. This essentially filtered out any closing pitchers or players who may have been called up briefly from the minor leagues. 
+The following files from the Lahman Database were merged and used to create the dataset for our model:
+- [`Salaries.csv`](./resources/LahmanData/Salaries.csv)
+    - contains salary data for all players
+- [`People.csv`](./resources/LahmanData/People.csv)
+    - contains demographic information for all players
+        - ex. Height, weight, L/R handed, birthplace, etc.
+- [`Pitching.csv`](./resources/LahmanData/Pitching.csv)
+    - contains pitching statistics for all players who have pitched
+<br>
+
+After creating our initial dataset, we began cleaning up the data for use in our model. The dataset was filtered using Pandas as follows:<br>
+1. `Years` column filtered to include only 1990-2016
+2. Included only pitchers with >= 3 games started (GS)
+3. Null values were filtered out
+4. Columns/features that clearly did not contribute to salary were dropped 
+    - ex. birth place, 
+
+
+
 
 Next, the data had to be cleaned after being filtered. The first step in this process was to filter out any null values in the `Salary` column since these data points would be of no help. After this, a handful of columns were dropped because the stats they provided were either empty values or simply not relevant for this analysis. 
 
