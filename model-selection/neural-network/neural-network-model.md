@@ -65,6 +65,36 @@ Additionally, viewing plots for the loss and MSE indicate that the model hits a 
 
 ![NN2 MSE Plot](./images/NN2-MSE.png)<br>
 
+# Neural Net v3.0 - Using Classification instead of Regression
+
+Since the regression neural network models were performing poorly, we decided to attempt a classifcation model instead. The most accurate classification model had the following changes:
+- Salaries were binned into four groups: low, mid, high, and top
+- Features were reduced from 7 down to 4
+    - BFP - Batters Faced by Pitcher
+    - OP - Outs Pitched
+    - ERA - Earned Run Average
+    - SO - Strike Outs
+- Model structure was changed
+    - Hidden layers 1 & 2
+        - 12 nodes each
+        - `relu` activation
+    - Hidden layer 3
+        - 4 nodes
+        - `relu` activation
+    - Output layer
+        - 4 nodes (same as # of features)
+        - `softmax` activation (recommended for classification)
+    - loss metric - `kullback_leibler_divergence`
+    - metric - accuracy
+## Results
+The best classifcation neural network produced the following results:
+- Loss: 1.17
+- Accuracy: 42.11%<br>
+
+![NN_Classification Metrics](./images/best-score_NN.png)
+
+
+
 # Analysis
-Overall, after attempting several methods of optimizing the dataset and the model components, we were unable to produce a neural network model effective at predicting pitcher salary based on the pitcher's statistics. This indicated to us that we should try using a different type of model for our project.
+Overall, after attempting several methods of optimizing the dataset and the model components, we were unable to produce a neural network model effective at predicting pitcher salary based on the pitcher's statistics. We were able to improve the neural network model's accuracy by using a classification model instead of regression and reducing the features, but  unfortunately the accuracy was still lower than random chance (50%). This indicated to us that we should try using a different type of model for our project.
 
