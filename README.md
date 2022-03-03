@@ -124,29 +124,10 @@ In addition to updating the random forest model with the new data set, an attemp
 > [Neural Network Analysis Details](./model-selection/neural-network/neural-network-model.md)
 
 #### *Overview*
-Since neural networks are effective at modeling complex and/or non-linear relationships, we attempted to create a neural network model for our salary-prediction project. Initially we attempted to use a regression model, but the performance was poor so we transitioned to using a classification model instead. Using classification instead of regression significantly improved the performance of the model.
+Since neural networks are effective at modeling complex and/or non-linear relationships and can weigh feature significance in a more sophisticated way than simpler machine learning models- so, we attempted to create a neural network model for our salary-prediction project.<br>
 
-#### *Model Structure*
-The best neural network model we created was constructed as follows:
-- Salaries were binned into four groups: low, mid, high, and top
-- Features were reduced from 7 down to 4
-    - BFP - Batters Faced by Pitcher
-    - OP - Outs Pitched
-    - ERA - Earned Run Average
-    - SO - Strike Outs
-- Neural Network
-    - Hidden layers 1 & 2
-        - 12 nodes each
-        - `relu` activation
-    - Hidden layer 3
-        - 4 nodes
-        - `relu` activation
-    - Output layer
-        - 4 nodes (same as # of features)
-        - `softmax` activation (recommended for classification)
-    - loss metric - `kullback_leibler_divergence`
-    - metric - accuracy<br>
-    <br>
+Initially we attempted to use a regression model, but the performance was poor so we transitioned to using a classification model instead. Using classification instead of regression significantly improved the performance of the model.
+
 #### *Results*
 The best classifcation neural network produced the following results:
 - Loss: 1.17
@@ -155,17 +136,7 @@ The best classifcation neural network produced the following results:
 ![NN_Classification Metrics](./model-selection/neural-network/images/best-score_NN.png)
 
 
-#### *Analysis*
-Overall, after attempting several methods of optimizing the dataset and the model components, we were unable to produce a neural network model effective at predicting pitcher salary based on the pitcher's statistics. We were able to improve the neural network model's accuracy by using a classification model instead of regression and reducing the features, but  unfortunately the accuracy was still lower than random chance (50%). This indicated to us that we should try using a different type of model for our project.
 
-
-#### *Benefits & Limitations*
-Some benefits of using a neural network model would be that they are often effective at modeling complex and non-linear relationships, and can weigh feature significance in a more sophisticated way than standard machine learning models. 
-<br>
-
-A few major limitations of this model are:
-- Neural networks require significant data preprocessing; like a real brain, neural network models are prone to learning 'bad habits' when training, so thorough preprocessing is required to avoid this.
-- Neural networks are highly customizable, so it can be difficult to determine the optimal structure for the neural network. We found that to be the case in our situation- where even after various attempts at optimization, some good and some bad, we were unable to produce an effective neural network model.
 
 
 ## Polynomial Regression Analysis
