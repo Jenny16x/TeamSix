@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="static/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Money Ball 2.0</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body style="background-image: linear-gradient(90deg, rgb(189, 189, 189), rgb(74, 74, 74))">
+
+  <div class="container" >
+
+        <div class="row">
+            <div class="col-md-12 jumbotron text-center" style="color: #417b9a;" >
+                <style type="text/css">
+                </style>
+                <h1>Player Statistic</h1>
+                <p>TeamSix</p>
+            </div>
+        </div>
+
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a class="active" href="statistics.html">Statistics</a>
+            <a href="tableau.html">Tableau</a>
+            <a href="ml.html">Machine Learning</a>
+            <a href="database.html">Database</a>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="well">
+                    <h5>Attribute</h5>    
+                    <select id="selDataset" onchange="optionChanged(this.value)"></select>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="static/js/charts.js"></script>
+
+</body>
+
+</html>
+
+
