@@ -98,3 +98,7 @@ The best classifcation neural network produced the following results:
 # Analysis
 Overall, after attempting several methods of optimizing the dataset and the model components, we were unable to produce a neural network model effective at predicting pitcher salary based on the pitcher's statistics. We were able to improve the neural network model's accuracy by using a classification model instead of regression and reducing the features, but  unfortunately the accuracy was still lower than random chance (50%). This indicated to us that we should try using a different type of model for our project.
 
+# Limitations of the Model
+A few major limitations of this model are:
+- Neural networks require significant data preprocessing; like a real brain, neural network models are prone to learning 'bad habits' when training, so thorough preprocessing is required to avoid this.
+- Neural networks are highly customizable, so it can be difficult to determine the optimal structure for the neural network. We found that to be the case in our situation- where even after various attempts at optimization, some good and some bad, we were unable to produce an effective neural network model.
