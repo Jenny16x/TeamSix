@@ -142,6 +142,8 @@ A few major limitations of this model are:
 
 
 ## Polynomial Regression Analysis
+> [Polynomial Regression Folder](https://github.com/Jenny16x/TeamSix/tree/main/model-selection/polynomial-regression)<br>
+> [Polynomial Regression Analysis](https://github.com/Jenny16x/TeamSix/blob/main/model-selection/polynomial-regression/polynomial-regression.md)<br>
 #### *Overview*
 Another model we explored using was a polynomial regression analysis. We thought it might perform better than a typical linear regression model given that many of the pitching statistics analyzed were only moderately correlated with pitcher salary. The polynomial regression model attempts to overcome this issue by adding a curvature to what would otherwise be a flat prediction line.<br>
 
