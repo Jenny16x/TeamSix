@@ -24,17 +24,9 @@ After exploring several models and features, it was decided to go back to the in
 
 Based on the changes of the dataset and using the natural log for salaries, the following results were achieved: 
  
+![image](https://user-images.githubusercontent.com/90434559/156635129-8fef3964-6d68-436b-9dd2-b5dacd0ed89a.png)
 
-![Scatter1](https://user-images.githubusercontent.com/90434559/152698416-0c15916f-dac5-4df8-b14e-93984f212fbb.png)
-
-After removing the outliers, the scatterplot below showed the same ERA/Salary relationship, but in a bit more detail.
-![Scatter2](https://user-images.githubusercontent.com/90434559/152698454-d6965103-6256-4cd9-8537-8c6c7b2fb4a8.png)
-
-As a result of the scatterplots, the inital machine learning model chosen was linear regression.  The linear regression line was fit based on the initial data and produced the following model with a training and testing score of .97.
-
-![Scatter3](https://user-images.githubusercontent.com/90434559/152698530-19d303e3-d4d3-4d0c-ab86-efdec46c7529.png)
-
-As we develop the dataset, our machine learning model will evolve and employ unsupervised learning to find additional relationships to salary.  From the original dataset, there are ERA values of 0, so additional variables will need to be taken into consideration when predicting salary.  
+This was the most accurate model with a training and testing socre of approximately .95.    
 
 <br>
 
