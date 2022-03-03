@@ -93,22 +93,42 @@ In addition to updating the random forest model with the new data set, an attemp
 ![image](https://user-images.githubusercontent.com/90434559/155923002-bfc8d932-8bae-45b7-b024-0a0e7a431a2e.png)
 
 ## Neural Network Model
+> [Neural Network Analysis Folder](./model-selection/neural-network/)
 #### *Overview*
 Since neural networks are effective at modeling complex and/or non-linear relationships, we attempted to create a neural network model for our salary-prediction project. 
 
-#### *Model Implementation*
-We initially started by using a regression model on select features, which produced a highly ineffective model with extremely high loss and MSE.<br>
-![NN1 Model- Loss Plot](https://raw.githubusercontent.com/Jenny16x/TeamSix/alyssa/neural-network/images/NN1-loss.png)
-![NN1 Model- MSE Plot](https://raw.githubusercontent.com/Jenny16x/TeamSix/alyssa/neural-network/images/NN1-MSE.png)<br>
-
-To improve the model, we decided to peform a log-transformation on the `Salary` column in order to standardize the salaries in an attempt to help the model work better. We predicted that the wide variation/distribution in salaries for MLB pitchers may have contributed to the initial neural network's poor performance.<br>
-
-Using a log-10 transformation *did* improve the metrics for the neural network model significantly, however the loss and MSE were still very high- too high to be considered an accurate model.<br>
-![NN2 Model- Loss Plot](https://raw.githubusercontent.com/Jenny16x/TeamSix/alyssa/neural-network/images/NN2-loss.png)
-![NN2 Model- MSE Plot](https://raw.githubusercontent.com/Jenny16x/TeamSix/alyssa/neural-network/images/NN2-MSE.png)<br>
-
+#### *Model Structure*
+The best neural network model we created was constructed as follows:
+- Salaries were binned into four groups: low, mid, high, and top
+- Features were reduced from 7 down to 4
+    - BFP - Batters Faced by Pitcher
+    - OP - Outs Pitched
+    - ERA - Earned Run Average
+    - SO - Strike Outs
+- Model structure was changed
+    - Hidden layers 1 & 2
+        - 12 nodes each
+        - `relu` activation
+    - Hidden layer 3
+        - 4 nodes
+        - `relu` activation
+    - Output layer
+        - 4 nodes (same as # of features)
+        - `softmax` activation (recommended for classification)
+    - loss metric - `kullback_leibler_divergence`
+    - metric - accuracy<br>
+    <br>
 #### *Results*
-Due to the poor performance of the neural network model with our dataset, we determined that a neural network model was not well-suited for the purpose of our project.
+The best classifcation neural network produced the following results:
+- Loss: 1.17
+- Accuracy: 42.11%<br>
+
+![NN_Classification Metrics](./model-selection/neural-network/images/best-score_NN.png)
+
+
+#### *Analysis*
+Overall, after attempting several methods of optimizing the dataset and the model components, we were unable to produce a neural network model effective at predicting pitcher salary based on the pitcher's statistics. We were able to improve the neural network model's accuracy by using a classification model instead of regression and reducing the features, but  unfortunately the accuracy was still lower than random chance (50%). This indicated to us that we should try using a different type of model for our project.
+
 
 #### *Benefits & Limitations*
 Some benefits of using a neural network model would be that they are often effective at modeling complex and non-linear relationships, and can weigh feature significance in a more sophisticated way than standard machine learning models. 
