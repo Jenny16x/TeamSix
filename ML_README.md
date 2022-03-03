@@ -26,7 +26,10 @@ Based on the changes of the dataset and using the natural log for salaries, the 
  
 ![image](https://user-images.githubusercontent.com/90434559/156635129-8fef3964-6d68-436b-9dd2-b5dacd0ed89a.png)
 
-This was the most accurate model with a training and testing socre of approximately .95.    
+This was the most accurate model with a training and testing score of approximately 96%.
+
+![image](https://user-images.githubusercontent.com/90434559/156635587-044ed958-a0ba-4a85-97e5-efdfca0a174b.png)
+
 
 <br>
 
