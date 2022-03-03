@@ -10,7 +10,8 @@ __pycache__/
 alyssa/
 
 # Webpage files
-.DS_Store
+*.DS_Store
+*/Webpage/.DS_Store
 
 
 # Distribution / packaging
