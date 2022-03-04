@@ -201,7 +201,7 @@ Some limitations to this model are that outliers can negatively impact performan
 
 After exploring several models and features, it was decided to go back to the initial model using ERA and Salary.  However, based on what we learned throughout the process, there were a couple of updates from Model 1:
   1. The dataset now included baseball statistics from 1990-2016
-  2. Only pitchers who played 7 innings were included
+  2. Only pitchers who started 7 games in a season were included
   3. The natural log of the salaries were used instead of the actual salaries
 
 Based on the changes of the dataset and using the natural log for salaries, the following results were achieved:<br> 
