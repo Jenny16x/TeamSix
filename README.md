@@ -20,7 +20,7 @@
 ## Project Overview
 
 ### Topic
-For this project, we created a supervised machine learning model to predict MLB pitcher salary based on their Earned Run Average (ERA).
+For this project, we created a supervised machine learning linear regression model to predict MLB pitcher salary based on their Earned Run Average (ERA).
 <br>
 
 ### Reasoning
@@ -195,7 +195,7 @@ Based on the changes of the dataset and using the natural log for salaries, the 
 
 This was the most accurate model with a training and testing score of approximately 96%.<br>
 
-![Final Model Accuracy Metrics](https://user-images.githubusercontent.com/90434559/156635587-044ed958-a0ba-4a85-97e5-efdfca0a174b.png)<br>
+![Final Model Accuracy Metrics](./resources/images/final-model_acc-score.png)<br>
 
 
 <br>
