@@ -164,6 +164,8 @@ One potential issue is that the statistics in our dataset do not have strong lin
 #### *Overview*
 Another model we explored using was a polynomial regression analysis. We thought it might perform better than a typical linear regression model given that many of the pitching statistics analyzed were only moderately correlated with pitcher salary. The polynomial regression model attempts to overcome this issue by adding a curvature to what would otherwise be a flat prediction line.<br>
 
+#### *Results*
+
 ![PR_LR_Model- ERA Plot](https://raw.githubusercontent.com/Jenny16x/TeamSix/main/model-selection/polynomial-regression/images/ERA_LR.png)<br>
 ![PR_LR Model- SO Plot](https://raw.githubusercontent.com/Jenny16x/TeamSix/main/model-selection/polynomial-regression/images/SO_LR.png)<br>
 
