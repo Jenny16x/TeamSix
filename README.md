@@ -1,4 +1,4 @@
-# MoneyBall 2.0
+# Moneyball 2.0
 
 ## Table of Contents
 - [Overview](https://github.com/Jenny16x/TeamSix#project-overview)
@@ -230,7 +230,7 @@ We have also created a [presentation](https://docs.google.com/presentation/d/122
 
 ![Screenshot of Google Slides Presentation](./resources/images/presentation_snapshot.png)
 
-This presentation will provide the following information:
+This presentation covers the following information:
 - Our topic
 - Reason for choosing this topic
 - Description of our data sources
@@ -246,21 +246,12 @@ This presentation will provide the following information:
 
 # Dashboard
 
-## Tableau Dashboard
-We are currently utilizing Tableau to create our dashboard (Link to [Dashboard](https://public.tableau.com/app/profile/dan.jones7483/viz/MoneyBall2_0/AvgSalaryHeight)).<br>
+## Webpage
+>[Webpage Code Folder](https://github.com/Jenny16x/TeamSix/tree/main/Webpage)<br>
 
-This dashboard will feature tables and graphs displaying relationships between player salary and various features.<br>
+We have developed a webpage with an overview of our project, graphs of pitching metrics vs Salary, and an interactive Tableau dashboard of our data.<br>
 
-![Average Salary by Team - 2016](./resources/images/tableau-1.png)<br>
-
-
-![Pitcher Data Table](./resources/images/tableau-2.png)<br>
-
-<br><br>
-
-## Webpage Dashboard
-We are also utilizing an interactive [webpage](https://jenny16x.github.io/TeamSix_Website/) to display our project.<br><br>
-Some details about how we created this page can be found [here](https://github.com/Jenny16x/TeamSix/blob/jenny/Jennys_README.md#the-original-structure-vs-teamsix-modified-structure).
+To view our page, click [here!](https://jenny16x.github.io/TeamSix/)<br>
 
 ![Webpage](./resources/images/webpage_screenshot_UPDATED.png)<br>
 
