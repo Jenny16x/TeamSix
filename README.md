@@ -253,7 +253,11 @@ We have developed a webpage with an overview of our project, graphs of pitching 
 
 To view our page, click [here!](https://jenny16x.github.io/TeamSix/)<br>
 
+#### *Home Page*
 ![Webpage](./resources/images/webpage_screenshot_UPDATED.png)<br>
+
+#### *Tableau Integration*
+![Tableau Integration](./resources/images/tablea-snap-final.png)
 
 <br>
 
