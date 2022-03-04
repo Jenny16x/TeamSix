@@ -1,5 +1,7 @@
 # Moneyball 2.0
 
+<img src="./resources/images/baseball-banner.jpg" width="1200" height="400">
+
 ## Table of Contents
 - [Overview](https://github.com/Jenny16x/TeamSix#project-overview)
 - [Data Preprocessing](https://github.com/Jenny16x/TeamSix#data-preprocessing)
