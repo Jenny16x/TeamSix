@@ -86,7 +86,7 @@ Although we had a good accuracy score with linear regression using only ERA to d
 
 We tested the following models with varying results:
 - Random Forest 
-- Neural Network
+- Neural Network (Regression and Classification)
 - Polynomial Regression
 - Multivariate Regression
 
@@ -105,6 +105,8 @@ The final results produced an accuracy score of 52.5%, which was not great- but 
 <br>![Random Forest Analysis Results](./resources/images/RF-original-features.png)
 <br>
 
+[*jump to top*](https://github.com/Jenny16x/TeamSix#moneyball-20)
+
 <br>
 
 ## Updated Random Forest Analysis
@@ -119,7 +121,11 @@ The random forest model was updated with our current data set of 1990-2016 data.
 #### Binned Age and Salaries
 In addition to updating the random forest model with the new data set, an attempt was made to improve the accuracy score by also binning the ages.  Unfortunately, this did not improve the score and produced a less accurate result of 60.4%
 
-![image](https://user-images.githubusercontent.com/90434559/155923002-bfc8d932-8bae-45b7-b024-0a0e7a431a2e.png)
+![image](https://user-images.githubusercontent.com/90434559/155923002-bfc8d932-8bae-45b7-b024-0a0e7a431a2e.png)<br>
+
+[*jump to top*](https://github.com/Jenny16x/TeamSix#moneyball-20)<br>
+
+<br>
 
 ## Neural Network Model
 > [Neural Network Folder](./model-selection/neural-network/)<br>
@@ -135,7 +141,12 @@ The best classifcation neural network produced the following results:
 - Loss: 1.17
 - Accuracy: 42.11%<br>
 
-![NN_Classification Metrics](./model-selection/neural-network/images/best-score_NN.png)
+![NN_Classification Metrics](./model-selection/neural-network/images/best-score_NN.png)<br>
+<br>
+
+[*jump to top*](https://github.com/Jenny16x/TeamSix#moneyball-20)
+
+<br>
 
 # Multivariate Regression Model
 >[Multivariate Regression Folder](https://github.com/Jenny16x/TeamSix/tree/main/model-selection/multivariate-regression)<br>
@@ -155,7 +166,9 @@ The best iteration of the multivariate regression model used a log-10 transforma
 
 Overall, the multivariate regression analysis model was not effective at predicting pitcher salary using pitching statistics. It's possible that the dataset we are working with is just not optimally suited for analysis with this model.
 
-One potential issue is that the statistics in our dataset do not have strong linear relationships with salary, which would make developing a model based on linear regression difficult to accomplish.
+One potential issue is that the statistics in our dataset do not have strong linear relationships with salary, which would make developing a model based on linear regression difficult to accomplish.<br>
+
+[*jump to top*](https://github.com/Jenny16x/TeamSix#moneyball-20)
 
 
 ## Polynomial Regression Analysis
@@ -197,7 +210,9 @@ This was the most accurate model with a training and testing score of approximat
 
 ![Final Model Accuracy Metrics](./resources/images/final-model_acc-score.png)<br>
 
+<br>
 
+[*jump to top*](https://github.com/Jenny16x/TeamSix#moneyball-20)<br>
 <br>
 
 # Database
