@@ -3,12 +3,13 @@
 ## Table of Contents
 - [Overview](https://github.com/Jenny16x/TeamSix#project-overview)
 - [Data Preprocessing](https://github.com/Jenny16x/TeamSix#data-preprocessing)
-- [Machine Learning Model](https://github.com/Jenny16x/TeamSix#the-machine-learning-model)
+- [Model Selection Process](https://github.com/Jenny16x/TeamSix#model-selection-process)
     - [Exploratory Analysis](https://github.com/Jenny16x/TeamSix#exploratory-analysis)
     - [Random Forest Analysis](https://github.com/Jenny16x/TeamSix#random-forest-analysis)
     - [Updated Random Forest Analysis](https://github.com/Jenny16x/TeamSix#updated-random-forest-analysis)
     - [Neural Network Model](https://github.com/Jenny16x/TeamSix#neural-network-model)
     - [Polynomial Regression Analysis](https://github.com/Jenny16x/TeamSix#polynomial-regression-analysis)
+- [The Final Model](https://github.com/Jenny16x/TeamSix#the-final-model)
 - [Database](https://github.com/Jenny16x/TeamSix#database)
 - [Presentation](https://github.com/Jenny16x/TeamSix#presentation---google-slides)
 - [Dashboard](https://github.com/Jenny16x/TeamSix#dashboard)
@@ -135,8 +136,25 @@ The best classifcation neural network produced the following results:
 
 ![NN_Classification Metrics](./model-selection/neural-network/images/best-score_NN.png)
 
+# Multivariate Regression Model
+>[Multivariate Regression Folder](https://github.com/Jenny16x/TeamSix/tree/main/model-selection/multivariate-regression)<br>
+>[Multivariate Regression Analysis Details](https://github.com/Jenny16x/TeamSix/blob/main/model-selection/multivariate-regression/multivariate-regression.md)<br>
 
+#### *Overview*
+Since we were interested in finding a linear relationship between salary and multiple features (pitching statistics) to predict salary, a multivariate regression analysis seemed like a reasonable model choice.<br>
 
+#### *Results*
+The best iteration of the multivariate regression model used a log-10 transformation on the salaries. The metrics of the best multivariate regression model were:
+- Training Score: 47%
+- Testing Score: 46%
+- MSE: 0.22
+- R-squared: 0.46<br>
+
+![Multivariate Regression Metrics](https://raw.githubusercontent.com/Jenny16x/TeamSix/main/model-selection/multivariate-regression/resources/MRA_logSal_outliers-IN.png)
+
+Overall, the multivariate regression analysis model was not effective at predicting pitcher salary using pitching statistics. It's possible that the dataset we are working with is just not optimally suited for analysis with this model.
+
+One potential issue is that the statistics in our dataset do not have strong linear relationships with salary, which would make developing a model based on linear regression difficult to accomplish.
 
 
 ## Polynomial Regression Analysis
