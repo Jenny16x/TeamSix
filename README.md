@@ -216,6 +216,10 @@ This was the most accurate model with a training and testing score of approximat
 <br>
 
 # Database
+
+
+#### *Overview*
+We utilized MongoDB as our database to store files used in our project. 
 ## Database Schema
 ![Database Schema](https://raw.githubusercontent.com/Jenny16x/TeamSix/Jason/Pitcher_Salaries_ERD.png)
 <br>
