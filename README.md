@@ -8,6 +8,7 @@
     - [Random Forest Analysis](https://github.com/Jenny16x/TeamSix#random-forest-analysis)
     - [Updated Random Forest Analysis](https://github.com/Jenny16x/TeamSix#updated-random-forest-analysis)
     - [Neural Network Model](https://github.com/Jenny16x/TeamSix#neural-network-model)
+    - [Multivariate Regression Model](https://github.com/Jenny16x/TeamSix#multivariate-regression-model)
     - [Polynomial Regression Analysis](https://github.com/Jenny16x/TeamSix#polynomial-regression-analysis)
 - [The Final Model](https://github.com/Jenny16x/TeamSix#the-final-model)
 - [Database](https://github.com/Jenny16x/TeamSix#database)
